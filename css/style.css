@@ -1,31 +1,72 @@
+/* GOOGLE FONTS - POPPINS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Readex+Pro:wght@400;600&family=Roboto+Slab:wght@600&family=Rubik+Puddles&display=swap');
 * {
     padding: 0px;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    height: 98vh;
+    gap: 10px;
 }
 
 
-/*Header*/
+/* ESTRUCTURA DE UNA PAGINA */
 
 header {
-    width: auto;
-    height: auto;
+    background-color: #01BEFE;
+    grid-column: 1/-1;
+    display: 20px;
+    place-content: center;
 }
-
-.header1 {}
-
-
-/*nav - sub menus */
 
 nav {
-    backround-color: #ebd9d9;
-    width: auto;
-    height: auto;
+    background-color: #ff006d;
 }
+
+aside {
+    background-color: #833d5b;
+}
+
+section {
+    background-color: #ff7d00;
+    grid-column: 1/-1;
+    display: 20px;
+    place-content: center;
+}
+
+article {
+    background-color: #ffdd00;
+    margin: 3px;
+    border-radius: 20px;
+}
+
+footer {
+    grid-column: 1/-1;
+    border-bottom: 1px solid rgba(197, 197, 197, 0.45);
+}
+
+.final-column {
+    grid-column: 1/-1;
+}
+
+
+/*---------------------------------------------*/
 
 nav li {
     display: inline-block;
-    line-height: 50px;
+    line-height: 35px;
     margin: 0 8px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
 }
 
 ul li a:hover {
@@ -34,28 +75,53 @@ ul li a:hover {
 }
 
 
-/*section - cuerpo 1*/
+/*---------------------------------------------*/
 
-.cuerpo1 {
-    bacground-color: #a71d1d;
-    width: auto;
-    height: 300px;
+.footer-contenedor-column {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
-
-/*section - cuerpo 2*/
-
-.cuerpo2 {
-    bakground-color: #35af25;
-    width: auto;
-    height: 300px;
+.footer-div {
+    margin-top: 30px;
+    ackground-color: burlywood;
 }
 
+#footer-icon-social {
+    font-size: 24px;
+}
 
-/*footer*/
+.footer-column-social {
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+}
 
-footer {
-    backgound-color: black;
-    width: auto;
-    height: 300px;
+.footer-column-social p a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: black;
+}
+
+.footer-title-social {
+    ackground-color: aqua;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 10px;
+}
+
+.footer-quienes {
+    margin-bottom: 5px;
+}
+
+.footer-quienes a {
+    text-decoration: none;
+    color: black;
+}
+
+.final {
+    text-align: center;
+    font-size: 17px;
 }
